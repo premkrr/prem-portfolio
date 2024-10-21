@@ -5,23 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prem's - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/8114394e8f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
+    <nav >
+        <a href="#" class="logo"><span>P</span>rem.</a>
+        <ul id="sidemenu">
+            <li><a href="#header" class="act">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
     <div class="container">
-        <nav>
-            <img src="images\logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Computer Seience Engineer</p>
-            <h1>Hi, I'm <span>Prem</span> Kumar<br>From Chitarpur</h1>
+        <div class="home">
+            <div class="header-text">
+                <h4>Hello, My Name Is</h4>
+                <h1><span>Prem</span> Kumar</h1>
+                <div class="wrapper">
+                    <div class="static-txt">And I'm a</div>
+                    <ul class="dynamic-txts">
+                        <li><span>Web Devloper</span></li>
+                        <li><span>Web Designer</span></li>
+                        <li><span>Editor</span></li>
+                        <li><span>Analist</span></li>
+                    </ul>
+                </div>
+            
+                <div class="btn-box">
+                    <a href="#contact" >
+                        <button class="btn-1">Hire Me</button>
+                    </a>
+                    <a href="images/Prem CV 1.pdf">
+                        <button class="btn-2">My Resume</button>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="images/prem.png" alt="">
+            </div>
         </div>
     </div>
 </div>
@@ -30,10 +60,51 @@
     <div class="container">
         <div class="row"> 
             <div class="about-col-1">
-                <img src="images/user.png" alt="">
+                <img src="images/prem2.png" alt="">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello! I'm Prem Kumar, a passionate and enthusiastic Computer Science graduate with a deep interest in software development, web technologies, and problem-solving. As a fresher, I am eager to apply my academic knowledge and skills to real-world projects while continuously learning and growing in the ever-evolving field of technology. 
+                    <br>
+                    During my studies, I gained a solid foundation in programming languages, algorithms, data structures, and software engineering principles. I have experience working on projects involving web development, database management, and I am always excited to explore new tools and technologies.
+                    <br>
+                    I'm currently seeking opportunities to contribute to exciting projects while honing my skills and expanding my knowledge.
+                    <br>
+                    Let's build something amazing together!
+                </p>
+                
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'Education', 'about')">Education</p>
+                    <p class="tab-links" onclick="opentab(event, 'Details', 'about')">Details</p>
+                    <p class="tab-links" onclick="opentab(event, 'Hobbies', 'about')">Interests/Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li><span> B.Tech in CSE -- 2021 - 2024</span><br>Ramgarh Engineering College, Ramgarh, Jharkhand</li>
+                        <li><span> Diploma in EE -- 2018 - 2021 </span><br>Gola Polytechnic, Gola, Jharkhand   </li>
+                        <li><span>Matriculation - Xth 2018</span><br>DAV Public School, Rajrappa, Jharkhand </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Details">
+                    <ul>
+                        <li><span>Full Name</span><br>Prem Kumar</li>
+                        <li><span>Location </span><br>Ramgarh, Jharkhand, India  </li>
+                        <li><span>Email Address</span><br>premkr5334@gmail.com </li>
+                        <li><span>Phone Number</span><br>+91 6206322365 </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Hobbies">
+                    <ul>
+                        <li><span>AI Enthusiast :</span>- Passionate about exploring the potential of artificial intelligence. </li>
+                        <li><span>Open Source Contributor :</span>- Actively involved in contributing to open-source projects. </li>
+                        <li><span>Reading :</span>- Love to read books on technology, science fiction, and personal development.
+                        </li>
+                        <li><span>Photography :</span>- Enjoy capturing the beauty of everyday moments through photography. </li>
+                        <li><span>Hiking :</span>- An outdoor enthusiast who enjoys hiking and exploring nature to recharge. </li>
+                    </ul>
+                </div>
             </div> 
         </div>
 
@@ -41,5 +112,619 @@
 
 </div>
 
+
+<!-- ----------------------------skills------------------- -->
+
+<div id="skills">
+    <div class="container">
+
+        <div class="title">
+            <h2 class="sub-title active-link" onclick="opentab(event, 'skills-grid', 'skills')">Skills</h2>
+            <h2 class="sub-title" onclick="opentab(event, 'Certifications', 'skills')">Certifications</h2>
+            <h2 class="sub-title" onclick="opentab(event, 'experience', 'skills')">Experience</h2>
+
+        </div>
+
+
+        
+        <div class="tab-contents skills-grid active-tab" id="skills-grid">
+            <!-- Skill 1 -->
+            <div class="skill-item">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+                <p>90%</p>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skill-item">
+                <i class="fa-brands fa-css3"></i>
+                <h3>CSS</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <p>80%</p>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="skill-item">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <p>70%</p>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="skill-item">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <p>80%</p>
+            </div>
+
+            <!-- Skill 5 -->
+            <div class="skill-item">
+                <i class="fa-solid fa-c">#</i>
+                <h3>C Sharp(C#)</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 65%;"></div>
+                </div>
+                <p>65%</p>
+            </div>
+
+            <!-- Skill 6 -->
+            <div class="skill-item">
+                <i class="fa-solid fa-flask"></i>
+                <h3>Flask</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <p>80%</p>
+            </div>
+           
+            <!-- Skill 7 -->
+            <div class="skill-item">
+                <i class="fa-solid fa-">.n e t</i>
+                <h3>ASP.NET Core</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+                <p>75%</p>
+            </div>
+            
+            <!-- Skill 8 -->
+            <div class="skill-item">
+                <i class="fa-solid fa-database"></i>
+                <h3>MySQl</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <p>80%</p>
+            </div>
+            
+            <!-- Skill 9 -->
+            <div class="skill-item">
+                <i class="fa-solid fa-database"></i>
+                <h3>SQl Server</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <p>80%</p>
+            </div>
+            
+            <!-- Skill 10 -->
+            <div class="skill-item">
+                <i class="fa-brands fa-python"></i>                <h3>Pandas</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <p>70%</p>
+            </div>
+            
+            <!-- Skill 11 -->
+            <div class="skill-item">
+                <i class="fa-brands fa-python"></i>                <h3>NumPy</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <p>70%</p>
+            </div>
+            
+            <!-- Skill 12 -->
+            <div class="skill-item">
+                <i class="fa-solid fa-gears"></i>
+                <h3>Python Automation</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+                <p>75%</p>
+            </div>
+        </div>
+
+
+
+        
+        <div class="tab-contents Certifications-grid" id="Certifications">
+            <div class="full-img" id="fullimgbox">
+                <img src="images/Google.jpg" alt="" id="fullimg">
+                <span onclick="closeFullImg()">x</span>
+            </div>
+            
+            <div class="img-gallery">
+                <img src="images/Google.jpg" class="card-image" onclick="openFullImg(this.src)">
+                <img src="images/hackerrank.jpg" class="card-image" onclick="openFullImg(this.src)">
+                <img src="images/mtf.jpg" class="card-image" onclick="openFullImg(this.src)">
+                <img src="images/Udemy.jpg" class="card-image" onclick="openFullImg(this.src)">
+                <img src="images/ybi.jpg" class="card-image" onclick="openFullImg(this.src)">
+                <img src="images/dzinex.png" class="card-image" onclick="openFullImg(this.src)">
+            </div>
+        </div>
+
+
+
+        <div class="tab-contents experience" id="experience">
+            <div class="content">
+                <div class="exp-container">
+                    <!-- YBI Foundation Internship -->
+                    <div class="exp-box">
+                        <h3>Project Intern</h3>
+                        <p class="company">YBI Foundation · Internship · Aug 2024 - Sep 2024</p>
+                        <p class="location">Ramgarh, Jharkhand, India · Remote</p>
+                        <p class="project-title">Project:- Movie Recommendation System</p>
+                        <p class="description">
+                            Overview:- Developed a machine learning model for a movie recommendation system using Python and TensorFlow.
+                        </p>
+                    </div>
+        
+                    <!-- College Project -->
+                    <div class="exp-box">
+                        <h3>College Project</h3>
+                        <p class="company">Project · Apr 2024 - Jun 2024</p>
+                        <!-- <p class="duration">Apr 2024 - Jun 2024 · 3 mos</p> -->
+                        <p class="location">Ramgarh, Jharkhand, India · On-site</p>
+                        <p class="project-title">Project:- Voice-Based Email System</p>
+                        <p class="description">
+                            Overview:- Developed an innovative email solution enabling blind users to compose, send, and manage emails using voice commands.
+                            Integrated text-to-speech and speech recognition technologies to enhance accessibility.<br>
+                            Technologies used:- HTML, CSS, Bootstrap, Python, Flask, MySQL and different python libraries.
+                        </p>
+                    </div>
+        
+                    <!-- Dzinex Technologies Internship -->
+                    <div class="exp-box">
+                        <h3>Project Intern</h3>
+                        <p class="company">Dzinex Technologies Pvt Ltd · Internship · May 2023 - Jun 2023</p>
+                        <!-- <p class="duration">May 2023 - Jun 2023 · 2 mos</p> -->
+                        <p class="location">Ranchi, Jharkhand, India · On-site</p>
+                        <p class="project-title">Project: Photofolio Website</p>
+                        <p class="description">
+                            Overview:- Developed a website named photofolio, i designed this website to store different types of collections of photos in different categories for the different users to explore in my website and they can also download any photo they want. <br>
+                            Technologies used:- HTML, CSS, Bootstrap, Python, Flask, MySQL.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="tab-contents skills-grid" id="experience">
+            <ul>
+                <li><span> B.Tech in CSE -- 2021 - 2024</span><br>Ramgarh Engineering College, Ramgarh, Jharkhand</li>
+                <li><span> Diploma in EE -- 2018 - 2021 </span><br>Gola Polytechnic, Gola, Jharkhand   </li>
+                <li><span>Matriculation - Xth 2018</span><br>DAV Public School, Rajrappa, Jharkhand </li>
+            </ul>
+        </div> -->
+
+        
+    </div>
+</div>
+
+
+
+
+
+<!-- -------------------------------services---------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title" >My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-paint-roller"></i>
+                <h2>Web Design</h2>
+                <p>I create visually appealing and user-friendly websites tailored to your brand's needs. My focus is on delivering responsive designs that engage visitors and enhance online presence.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I provide robust and scalable web development solutions, utilizing the latest technologies,  focusing on creating efficient and user-friendly websites tailored to your needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h2>Editing</h2>
+                <p>I offer professional editing services to enhance clarity, coherence, and overall quality of your content, ensuring it meets high standards and engages your audience effectively.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <h2>Project Collaboration</h2>
+                <p>I provide collaborative project services, working closely with teams to leverage diverse skills and expertise in developing innovative solutions. Together, we can turn ideas into successful outcomes through effective communication and teamwork.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------My work-------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Midea App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Social Midea App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Social Midea App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
+    </div>
+</div>
+
+
+<!-------------------------contact------------------------ -->
+
+
+<section class="contact" id="contact">
+    <div class="content">
+        <h2 class="sub-title">Let's Chat....!</h2>
+    </div>
+    <div class="containers">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="corner-top-right"></div>
+                    <div class="corner-bottom-left"></div>
+                </div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>AT-Chitarpur Bazar Tand,<br>Ramgarh, Jharkhand,<br>Pin-825201</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="corner-top-right"></div>
+                    <div class="corner-bottom-left"></div>
+                </div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>+91 6206322365</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="corner-top-right"></div>
+                    <div class="corner-bottom-left"></div>
+                </div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>premkr5334@gmail.com</p>
+                </div>
+            </div>
+
+            <h2 class="txt">Connect with me</h2>
+            <ul class="sci">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="contactForm">
+            <form >
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Mobile No.</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea required="required"></textarea>
+                    <span>Type Your Message....</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Send">
+                    <!-- <span> Email</span> -->
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="Copyright">
+        <p>Created By<a href="#"> Prem Kumar </a>|| 2024 © All rights reserved.</p>
+    </div>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="contact">
+    <div class="container"> 
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contect Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> premkr5334@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 1234567898765432</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download MY CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        
+                    </form>
+                </div>
+
+            </div>
+    </div>
+    <div class="Copyright">
+        <p>Copyright © prem. Made by Prem kumar.</p>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- --------------------tab change on about----------------------- -->
+
+<script>
+function opentab(event, tabname, section) {
+    // Variables for tab links and contents specific to the section
+    let tablinks, tabcontents;
+
+    // Check if the event is for the 'about' section
+    if (section === 'about') {
+        // Select tab links and contents specifically for the 'about' section
+        tablinks = document.querySelectorAll("#about .tab-links");
+        tabcontents = document.querySelectorAll("#about .tab-contents");
+    } 
+    // Check if the event is for the 'skills' section
+    else if (section === 'skills') {
+        // Select tab links and contents specifically for the 'skills' section
+        tablinks = document.querySelectorAll("#skills .title h2");
+        tabcontents = document.querySelectorAll("#skills .tab-contents");
+    }
+
+    // Loop through all the tab links to remove the active-link class
+    tablinks.forEach(tablink => {
+        tablink.classList.remove("active-link");
+    });
+
+    // Loop through all the tab contents to remove the active-tab class
+    tabcontents.forEach(tabcontent => {
+        tabcontent.classList.remove("active-tab");
+        // ------------------------------
+
+    });
+
+    // Add the active class to the clicked tab link and the respective content
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+
+    // If section is 'skills', control the display of the tabs and grid separately
+    if (section === 'skills') {
+        // Hide the skills grid when 'Certifications' or 'Experience' is active
+        if (tabname === "Certifications" || tabname === "experience") {
+            document.getElementById("skills-grid").style.display = "none";
+        } else {
+            document.getElementById("skills-grid").style.display = "grid";
+        }
+
+        // Show or hide 'experience' section
+        if (tabname === "experience") {
+            document.getElementById("experience").style.display = "block";
+        } else {
+            document.getElementById("experience").style.display = "none";
+        }
+
+        // Show or hide 'Certifications' section
+        if (tabname === "Certifications") {
+            document.getElementById("Certifications").style.display = "block";
+        } else {
+            document.getElementById("Certifications").style.display = "none";
+        }
+    }
+}
+
+</script>
+
+
+
+
+<!-------------open close full image in certification--------------- -->
+
+
+
+<script>
+    // Opening and closing full image
+    var fullimgbox = document.getElementById("fullimgbox");
+    var fullimg = document.getElementById("fullimg");
+
+    function openFullImg(pic) {
+        fullimgbox.style.display = "flex";
+        fullimg.src = pic;
+    }
+
+    function closeFullImg() {
+        fullimgbox.style.display = "none";
+    }
+
+    // Close full image when clicking anywhere outside the image
+    fullimgbox.addEventListener("click", function(event) {
+        // Check if the click was outside the full image
+        if (event.target === fullimgbox) {
+            closeFullImg();
+        }
+    });
+
+
+// -----------------------------hover effect on certification-----------------------
+
+
+// Rotation effect for each image
+const cardImages = document.querySelectorAll('.card-image');
+
+cardImages.forEach((cardImage) => {
+    // Function to reset rotation and scale
+    const resetRotation = () => {
+        cardImage.style.transform = 'rotateY(0deg) rotateX(0deg) scale(1)';  // Reset to original scale
+    };
+
+    // Cursor tracking function for dynamic 4-sided and 4-corner effect
+    const trackCursor = (event) => {
+        const rect = cardImage.getBoundingClientRect();
+        const x = event.clientX - rect.left;  // x position within the image
+        const y = event.clientY - rect.top;   // y position within the image
+
+        // Center points of the image
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        // Calculate rotation based on cursor position relative to the center
+        const rotateY = ((x - centerX) / centerX) * -30;  // Rotate Y axis
+        const rotateX = ((centerY - y) / centerY) * -30;   // Adjust for vertical tilt
+
+        // Apply rotation and scale
+        cardImage.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg) scale(1.5)`;  // Rotate and scale
+    };
+
+    // Add event listeners to each image
+    cardImage.addEventListener("mousemove", trackCursor);
+    cardImage.addEventListener("mouseleave", resetRotation);
+});
+</script>
+
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script> -->
+
+
+
+<!-- ----------------------sidemenu--open--close------------ -->
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+
+<script src="index.js"></script>
 </body>
 </html>
