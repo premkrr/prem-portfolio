@@ -10,20 +10,21 @@
 </head>
 <body>
 <div id="header">
-    <nav >
-        <a href="#" class="logo"><span>P</span>rem.</a>
-        <ul id="sidemenu">
-            <li><a href="#header" class="act">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">My Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-    </nav>
     <div class="container">
+        <nav >
+            <a href="#" class="logo"><span>P</span>rem.</a>
+            <ul id="sidemenu">
+                <li><a href="#header" class="act">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <i class="fa-solid fa-xmark" onclick="closemenu()"></i> -->
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    
         <div class="home">
             <div class="header-text">
                 <h4>Hello, My Name Is</h4>
@@ -42,7 +43,7 @@
                     <a href="#contact" >
                         <button class="btn-1">Hire Me</button>
                     </a>
-                    <a href="images/Prem CV 1.pdf">
+                    <a href="images/Prem CV 1.pdf" target="_blank">
                         <button class="btn-2">My Resume</button>
                     </a>
                     
@@ -64,7 +65,7 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>
+                <p >
                     Hello! I'm Prem Kumar, a passionate and enthusiastic Computer Science graduate with a deep interest in software development, web technologies, and problem-solving. As a fresher, I am eager to apply my academic knowledge and skills to real-world projects while continuously learning and growing in the ever-evolving field of technology. 
                     <br>
                     During my studies, I gained a solid foundation in programming languages, algorithms, data structures, and software engineering principles. I have experience working on projects involving web development, database management, and I am always excited to explore new tools and technologies.
@@ -368,26 +369,26 @@
         <h2 class="sub-title">My Work</h2>
         <div class="work-list">
             <div class="work">
-                <img src="images/work-1.png">
+                <img src="images/movie-system.png">
                 <div class="layer">
-                    <h3>Social Midea App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>Movie Recommendation system:-</h3>
+                    <p>Developed a machine learning model to provide personalized movie recommendations based on user preferences and ratings. This system utilizes collaborative filtering techniques, leveraging user-item interactions to predict movies that users would likely enjoy. The project involved working with a large dataset of movie ratings and user profiles.</p>
+                    <a href="https://colab.research.google.com/drive/19SCFvHI5CWm7iUc_B3vuQL_RWTkbd2AF" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-2.png">
+                <img src="images/portfolio.png">
                 <div class="layer">
-                    <h3>Social Midea App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>Personal Portfolio Website:-</h3>
+                    <p>Designed and developed a fully responsive personal portfolio website to showcase my skills, projects, and professional experiences. The website serves as an online resume and a hub for potential employers or collaborators to explore my work. It features a clean UI/UX design, optimized for both mobile and desktop devices. </p>
+                    <a href="#header"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="images/email-system.png">
                 <div class="layer">
-                    <h3>Social Midea App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                    <h3>Voice-Based Email System:-</h3>
+                    <p>Developed an innovative and accessible email system tailored for visually impaired users, enabling them to manage emails through voice commands. This project empowers blind users to send, read, and manage emails without the need for a traditional graphical interface, improving their digital accessibility. </p>
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -444,29 +445,32 @@
 
             <h2 class="txt">Connect with me</h2>
             <ul class="sci">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/premkrr" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://x.com/_prem_krr" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/_prem_krr/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/premkumar0501/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             </ul>
         </div>
         <div class="contactForm">
-            <form >
+            <form action="https://api.web3forms.com/submit" target="_blank" method="POST">
                 <h2>Send Message</h2>
+
+                <input type="hidden" name="access_key" value="f330589a-a110-44fa-a58e-bb33b5032a12">
+
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input type="text" name="name" required="required">
                     <span>Full Name</span>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input type="text" name="phone" required="required">
                     <span>Mobile No.</span>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input type="email" name="email" required="required">
                     <span>Email</span>
                 </div>
                 <div class="inputBox">
-                    <textarea required="required"></textarea>
+                    <textarea name="message" required="required"></textarea>
                     <span>Type Your Message....</span>
                 </div>
                 <div class="inputBox">
@@ -711,16 +715,33 @@ cardImages.forEach((cardImage) => {
 
 <!-- ----------------------sidemenu--open--close------------ -->
 <script>
-
     var sidemenu = document.getElementById("sidemenu");
 
-    function openmenu(){
+    function openmenu() {
         sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
+        // Add event listener to close the menu when clicking outside
+        document.addEventListener("click", closeMenuOutsideClick);
     }
 
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+        // Remove event listener when menu is closed
+        document.removeEventListener("click", closeMenuOutsideClick);
+    }
+
+    function closeMenuOutsideClick(event) {
+        // Check if the click was outside the sidemenu
+        if (!sidemenu.contains(event.target) && !event.target.matches('.fa-bars')) {
+            closemenu();
+        }
+    }
+
+    // Add click event listener to the sidemenu itself to close it when an option is clicked
+    sidemenu.addEventListener('click', function(event) {
+        if (event.target.tagName === 'A') {
+            closemenu();
+        }
+    });
 </script>
 
 
