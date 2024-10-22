@@ -22,7 +22,7 @@ nav .fa-solid{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* padding: 0 10px;  */
+        padding: 0 0; 
         /* position: relative; */
         /* z-index: 1; */
 
@@ -43,7 +43,7 @@ nav .fa-solid{
     }
 
     nav .fa-solid{
-
+        color: orangered;
         display: block;
         font-size: 25px;
         margin-right: 20px;
@@ -90,14 +90,16 @@ nav .fa-solid{
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 10px;
+        padding: 10px 20px;
+
     }
     .home .img-box {
         width: 100%;
         margin-bottom: 10px;
-        margin-top: 25px;
+        margin-top: 130px;
 
     }
+        
         
     
     .home .header-text {
@@ -113,10 +115,11 @@ nav .fa-solid{
         margin-left: 20px;
         margin-right: 0;
         margin-bottom: 150px;
+        margin-top: 30px;
     }
 
     .header-text h1 {
-        margin-left: -10px;
+        margin-left: -15px;
         font-size: 50px;
         /* margin-right: 50px; */
         white-space: nowrap;
@@ -126,71 +129,35 @@ nav .fa-solid{
     .header-text h4 {
         /* margin-top: 10px; */
         font-size: 24px;
-        margin-left: -7px;
+        margin-left: -12px;
         width: 215px;
     }
 
-    
+
     .wrapper {
-        display: flex;  
-        justify-content: center;
-        align-items: center;
-        white-space: nowrap;
-        font-size: 24px;
-        width: 300px;
-        height: 30px;
-        margin: 0 auto;
-        text-align: center;
-        /* margin-left: -20px;  */
-        margin-top: 0;
-        margin-left: -7px;
-        overflow: hidden;
-
+        flex-direction: row;
+        justify-content: space-between;
+        width: 350px;
+        height: 65px;
+        margin-left: -12px;
     }
 
-    .static-txt, .dynamic-txts {
-        text-align: left;
-        display: inline-block; /* Ensure they stay on the same line */
-        /* overflow: hidden; */
+    .wrapper .static-txt {
+        flex: 1;
     }
 
-
-    .dynamic-txts {
-        margin-left: 0; /* Removes extra space on smaller screens */
-        line-height: 30px; /* Adjust line height for better readability */
-        height: 30px;
-        overflow: hidden;
-        width: 100%;
-    }
-        
-    .dynamic-txts li {
-        /* font-size: 24px;  */
-        line-height: 30px;
-
+    .wrapper .dynamic-txts {
+        flex: 2;
+ 
     }
 
-    .dynamic-txts li span::after {
-        /* content: ""; */
-        /* position: absolute; */
-        /* width: 100%;  */
-        height: 40px; 
+    .dynamic-txts li span::after{
         background: #fff;
-        /* animation: typingSmallScreen 3s steps(12) infinite;  */
     }
 
-    /* @keyframes typingSmallScreen {
-        0% {
-            left: 0;
-        }
-        50% {
-            left: calc(100% + 10px); 
-        }
-        100% {
-            left: 0;
-        }
-    }
-     */
 
+
+ 
 
 
 
@@ -204,7 +171,8 @@ nav .fa-solid{
      #about{
         background: #000;
         width: 100vw;
-        padding: 20px;
+        padding: 0 30px;
+        padding-top: 65px;
      }
 
      .container{
@@ -223,15 +191,24 @@ nav .fa-solid{
      }
 
      .about-col-1{
-        margin-bottom: 20px;
+        width: 100%;    
+        height: 400px; 
+     
         left: 10%;
+      
 
      }
+
+     /* .about-col-1 img{
+        
+     } */
+
 
      .about-col-2{
         font-size: 15px;
         margin-right: 20px;
         text-align: left;
+        /* top: -50px; */
      }
 
 
@@ -245,10 +222,12 @@ nav .fa-solid{
     /* -----------------------skills------------ */
     
     #skills{
-        padding: 30px 20px;
+        padding: 20px 20px;
+        padding-top: 80px;
+
     }
     .title h2{
-        font-size: 16px;
+        font-size: 18px;
         margin-right: 25px;
     }
 
@@ -263,8 +242,61 @@ nav .fa-solid{
         width: 100%;
     }
 
+    /* -----------------------services------------------ */
 
+    #services{
+        padding: 30px 20px;
+    }
 
+    #services h1{
+        text-align: left;
+    }
+
+    /* ---------------------work---------------------- */
+    #portfolio{
+        padding: 60px 20px;
+
+    }
+    #portfolio h2{
+        text-align: left;
+    }
+
+    /* -------------contact--------------------- */
+
+    #contact{
+        padding: 0 20px;
+        padding-top: 40px;
+        /* text-align: left; */
+    }
+
+    #contact h2{
+        text-align: left;
+        width: 100%;
+    }
+    
+    .contact .content {
+        margin-top: 30px;
+    }
+
+    .containers{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .containers .contactInfo,
+    .containers .contactForm{
+        width: 100%;
+    }
+
+    .containers .contactForm{
+        padding: 30px;
+        z-index: 0;
+    }
+
+    
+    .containers .contactInfo{
+        margin: 0;
+    }
 
 
 
