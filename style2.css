@@ -222,13 +222,13 @@ nav .fa-solid{
     /* -----------------------skills------------ */
     
     #skills{
-        padding: 20px 20px;
-        padding-top: 80px;
+        padding: 0px 20px;
+        padding-top:100px;
 
     }
     .title h2{
-        font-size: 18px;
-        margin-right: 25px;
+        font-size: 21px;
+        margin-right: 18px;
     }
 
     .skills-grid {
@@ -245,7 +245,7 @@ nav .fa-solid{
     /* -----------------------services------------------ */
 
     #services{
-        padding: 30px 20px;
+        padding: 45px 20px;
     }
 
     #services h1{
@@ -254,7 +254,7 @@ nav .fa-solid{
 
     /* ---------------------work---------------------- */
     #portfolio{
-        padding: 60px 20px;
+        padding: 65px 20px;
 
     }
     #portfolio h2{
@@ -265,7 +265,7 @@ nav .fa-solid{
 
     #contact{
         padding: 0 20px;
-        padding-top: 40px;
+        padding-top: 55px;
         /* text-align: left; */
     }
 
